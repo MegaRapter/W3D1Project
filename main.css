@@ -22,13 +22,13 @@ nav {
     background: var(--yellow);
     color: #fff;
     font-size: 0.9em;
-    height: 1.8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
-#navLeft {
-    float: left;
-}
-#navRight {
-    float: right;
+
+#navRight ul, #navRight li {
+    display: inline;
 }
 
 #navLeft, #navRight {
@@ -41,17 +41,14 @@ nav {
 }
 
 #pageBody {
-    clear: both;
     margin: 2em auto;
-    text-align: center;
-}
-
-#container {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 article {
-    float: left;
     background: #fff;
     width: 11em;
     margin: 0.3em;
